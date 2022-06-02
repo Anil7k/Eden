@@ -1,0 +1,41 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        "@babel/plugin-transform-modules-commonjs"
+      ]
+    }
+  },
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "antd"
+      }
+    ],
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "regenerator": true
+      }
+    ],
+    [
+      "transform-imports",
+      {
+        "@mui/material": {
+          "transform": "@mui/material/${member}",
+          "preventFullImport": true
+        },
+        "@mui/icons-material": {
+          "transform": "@mui/icons-material/${member}",
+          "preventFullImport": true
+        }
+      }
+    ],
+    ["@babel/plugin-proposal-class-properties", { "loose": false }]
+  ]
+}

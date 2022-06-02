@@ -1,0 +1,36 @@
+
+@media only screen and (min-width: 700px) {
+  .container {
+    margin: 5% 5%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    margin: 5% 15%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    margin: 5% 28%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    margin: 5% 35%;
+  }
+}
+body{
+  font-family: 'Inter', sans-serif;
+}
+#outlined-adornment{
+  background: #fff;
+  padding: 10px 10px 10px 13px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+
+}
+#url p{
+  margin-left: -7px !important;
+  padding-right: 10px;
+}
+
